@@ -1,0 +1,124 @@
+{
+  "name": "http-forge-mcp",
+  "displayName": "HTTP Forge AI",
+  "description": "Turn GitHub Copilot, Claude, and Cursor into expert API engineers. HTTP Forge is the AI-native API platform for VS Code — full Postman compatibility, OpenAPI 3.0, headless CLI, cloud secrets, and TypeScript codegen, all local. This companion activates the built-in MCP server with 60+ tools. No extra API keys. No cloud account.",
+  "version": "0.1.1",
+  "publisher": "henry-huang",
+  "engines": {
+    "vscode": "^1.99.0"
+  },
+  "categories": [
+    "Testing",
+    "AI",
+    "Other"
+  ],
+  "keywords": [
+    "mcp",
+    "mcp server",
+    "model context protocol",
+    "ai agent",
+    "ai testing",
+    "github copilot",
+    "copilot",
+    "http forge",
+    "postman",
+    "free postman alternative",
+    "postman replacement",
+    "thunder client",
+    "thunder client alternative",
+    "postman import",
+    "bruno",
+    "insomnia",
+    "http",
+    "api",
+    "rest",
+    "graphql",
+    "api testing",
+    "api client",
+    "http-client",
+    "test suite",
+    "test runner",
+    "openapi",
+    "oauth2",
+    "playwright",
+    "codegen",
+    "git",
+    "ci",
+    "github actions",
+    "offline",
+    "secrets",
+    "secrets manager",
+    "vault",
+    "key vault",
+    "cursor",
+    "claude",
+    "agent",
+    "agentic"
+  ],
+  "icon": "resources/icon.png",
+  "galleryBanner": {
+    "color": "#1a1a2e",
+    "theme": "dark"
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "httpForgeAI.openDashboard",
+        "title": "HTTP Forge AI: Open Dashboard",
+        "icon": "$(rocket)"
+      },
+      {
+        "command": "httpForgeAI.openMcpDocs",
+        "title": "HTTP Forge AI: MCP Server Guide",
+        "icon": "$(book)"
+      },
+      {
+        "command": "httpForgeAI.generateMcpConfig",
+        "title": "HTTP Forge AI: Generate MCP Config for Copilot / Claude / Cursor",
+        "icon": "$(settings-gear)"
+      },
+      {
+        "command": "httpForgeAI.startMcpServer",
+        "title": "HTTP Forge AI: Start MCP Server",
+        "icon": "$(radio-tower)"
+      }
+    ],
+    "menus": {
+      "commandPalette": [
+        { "command": "httpForgeAI.openDashboard" },
+        { "command": "httpForgeAI.openMcpDocs" },
+        { "command": "httpForgeAI.generateMcpConfig" },
+        { "command": "httpForgeAI.startMcpServer" }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.99.0",
+    "@types/node": "^18.0.0",
+    "typescript": "^5.3.0",
+    "@vscode/vsce": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hsl1230/http-forge-ai.git"
+  },
+  "homepage": "https://github.com/hsl1230/http-forge",
+  "bugs": {
+    "url": "https://github.com/hsl1230/http-forge/issues"
+  },
+  "license": "MIT",
+  "extensionDependencies": [
+    "henry-huang.http-forge"
+  ]
+}

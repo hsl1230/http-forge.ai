@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+
+# Build output
+out/
+dist/
+*.vsix
+
+# IDE
+.vscode-test/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Coverage
+coverage/
+.nyc_output/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment
+.env
+.env.local
+
+# HTTP Forge cache (e.g. for full-response files) 
+.http-forge-cache/
+
+# Local environment configs (secrets)
+*.local.json
+_global.local.json
+*.tgz
+package-lock.json
