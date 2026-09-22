@@ -18,7 +18,7 @@ Connects your HTTP collections to AI agents via the [HTTP Forge](https://marketp
 
 ---
 
-[![AI in action — click to watch](https://raw.githubusercontent.com/hsl1230/http-forge/main/resources/thumbnails/ai-flow-thumb.png)](https://github.com/user-attachments/assets/70a3c4a0-66cd-4340-bfae-c4579c7d410b)
+<img src="docs/e2e-api-testing-through-ai.gif" alt="AI in action" width="100%"/>
 
 ---
 

@@ -2,7 +2,7 @@
   "name": "http-forge-mcp",
   "displayName": "HTTP Forge AI",
   "description": "Turn GitHub Copilot, Claude, and Cursor into expert API engineers. HTTP Forge is the AI-native API platform for VS Code — full Postman compatibility, OpenAPI 3.0, headless CLI, cloud secrets, and TypeScript codegen, all local. This companion activates the built-in MCP server with 60+ tools. No extra API keys. No cloud account.",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "publisher": "henry-huang",
   "engines": {
     "vscode": "^1.99.0"
